@@ -2,16 +2,24 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Quiz en Ligne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Quiz de Techniques de Visualisation</h1>
-        <div id="quiz"></div>
-        <button id="submit">Soumettre</button>
-        <div id="results"></div>
-        <button id="retry" style="display:none;">Recommencer</button>
+    <div id="quiz-container">
+        <div id="question-container">
+            <h2 id="question"></h2>
+            <div id="answer-buttons" class="btn-group">
+                <button class="btn" id="btnA"></button>
+                <button class="btn" id="btnB"></button>
+                <button class="btn" id="btnC"></button>
+            </div>
+        </div>
+        <button id="next-btn" class="next-btn">Suivant</button>
+        <div id="score-container">
+            <h2>Score: <span id="score">0</span></h2>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
